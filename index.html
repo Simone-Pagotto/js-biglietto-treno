@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Treno dei Desideri</title>
+  </head>
+  <body class="debug bg">
+    <div class="container">
+      <h1 class="bold-white">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+      <div class="card">
+        <div class="form-name">
+          <label for="name-surname">Nome e Cognome</label>
+          <input id="nome-cliente" type="text" name="name-surname" value="">
+        </div>
+        <div class="form-km">
+          <label for="km-expected">Km da percorrere</label>
+          <input id="km-percorsi" type="text" name="km" value="">
+        </div>
+        <div class="form-age">
+          <label for="age-range">Fascia d'età</label>
+          <select id="eta-cliente" class="" name="age">
+            <option value="0">---</option>
+            <option value="1">Minorenni</option>
+            <option value="2">Adulti under 65</option>
+            <option value="3">Adulti over 65</option>
+          </select>
+        </div>
+        <div class="form-button">
+          <button id="submit" class="animation-button" type="button" name="button">Genera</button>
+          <button id="cancel" class="animation-button" type="button" name="button">Annulla</button>
+        </div>
+
+      </div>
+
+      <h1 class="bold-white">IL TUO BIGLIETTO</h1>
+      <div id="hidden" class="ticket">
+        <h3>DETTAGLI PASSEGGERI</h2>
+        <div class="flex-ticket">
+
+          <div class="ticket-info">
+            <div class="grey-box">
+              <h3>NOME PASSEGGERO</h2>
+              <h2 id="nome-passeggero">None</h2>
+            </div>
+            <table>
+              <tr>
+                <th><h3>Offerta</h3></th>
+                <th><h3>Carrozza</h3></th>
+                <th><h3>Codice CP</h3></th>
+                <th><h3>Costo biglietto</h3></th>
+
+              </tr>
+              <tr>
+                <th id="message"><h3></h3></th>
+                <th id="n-carrozza"><h3></h3></th>
+                <th id="cp-codice"><h3></h3></th>
+                <th id="ticket-prize"><h3></h3></th>
+              </tr>
+
+            </table>
+          </div>
+
+
+        </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- script -->
+    <script src="js/script.js" charset="utf-8"></script>
+  </body>
+</html>
